@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+header {
+  width: 100%;
+}
+header .header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header i {
+  color: #FFF;
+}
+header .header-icons {
+  display: flex;
+  gap: 1rem;
+}
+header .header-icons a:hover i {
+  animation: translateY 0.8s infinite alternate;
+  color: #d34040;
+}
+@keyframes translateY {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-0.5rem) scale(1.1);
+  }
+}
+header .header-button {
+  border: 0.07rem solid #FFF;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.25rem;
+  color: #FFF;
+  background-color: transparent;
+  transform: background-color 0.8s;
+}
+header .header-button:hover {
+  border: 0.07rem solid #d34040;
+  background-color: #d34040;
+}
+header .header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .header-content {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-content i {
+    top: 1rem;
+    font-size: 2rem;
+  }
+  .header-logo img {
+    width: 10rem;
+    margin-top: 3rem;
+  }
+  .header-icons {
+    margin-top: 1rem;
+  }
+  .header-button {
+    display: none;
+  }
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.bg-home {
+  position: relative;
+}
+
+.bg-home::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("../assets/bg.svg");
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  opacity: 0.9;
+}
+
+.hero {
+  color: #FFF;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.hero h1 {
+  text-align: center;
+  height: 150%;
+  max-width: 58.75rem;
+  font-size: 3rem;
+}
+.hero p {
+  text-align: center;
+  margin: 1rem 0;
+}
+.hero .button-contact {
+  padding: 1rem 1.75rem;
+  color: #FFF;
+  background-color: #d94140;
+  border: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  display: inline-block;
+  cursor: pointer;
+}
+.hero .button-contact:hover {
+  animation: scaleButton 0.8s alternate infinite;
+}
+@keyframes scaleButton {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.07);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    min-height: 60vh;
+  }
+  .hero h1 {
+    font-size: 2rem;
+    padding: 0 1rem;
+    width: 100%;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  .hero p {
+    font-size: 0.75rem;
+  }
+}
+body {
+  font-family: "sora", sans-serif;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #06121e;
+}
+
+button {
+  font-family: "sora", sans-serif;
+  cursor: pointer;
+}
+
+svg {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */

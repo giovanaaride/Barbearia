@@ -1,0 +1,110 @@
+// Início BG Home
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.bg-home {
+    position: relative;
+}
+
+.bg-home::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("../assets/bg.svg");
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    opacity: 0.9;
+}
+// Fim BG Home
+
+// Início HERO
+
+.hero {
+    color: $white-normal;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+
+    h1 {
+        text-align: center;
+        height: 150%;
+        max-width: 58.75rem;
+        font-size: 3rem;
+    }
+
+    p {
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    .button-contact {
+        padding: 1rem 1.75rem;
+        color: $white-normal;
+        background-color: $red-normal;
+        border: 0;
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin: 1rem 0;
+        display: inline-block;
+        cursor: pointer;
+
+        &:hover {
+            animation: scaleButton 0.8s alternate infinite;
+        }
+
+        @keyframes scaleButton {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.07);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .hero{
+        min-height: 60vh;
+
+        h1{
+            font-size: 2rem;
+            padding: 0 1rem;
+            width: 100%;
+        }
+
+        p{
+            font-size: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    .hero{
+        h1{
+            font-size: 1.5rem;
+        }
+
+        p{
+            font-size: 0.75rem;
+        }
+    }
+}
+
+// Fim HERO
+
+// Início Sobre
+
