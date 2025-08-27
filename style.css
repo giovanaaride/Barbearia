@@ -201,6 +201,81 @@ header .header-logo {
     font-size: 2rem;
   }
 }
+.services {
+  background: #FFF;
+  color: #232224;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1rem;
+}
+
+.services-content h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.services-content p {
+  line-height: 150%;
+  margin-bottom: 1rem;
+  text-align: center;
+  max-width: 40rem;
+}
+
+.haircuts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 3rem 2rem 3rem;
+}
+
+.haircut {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF;
+  border-radius: 1rem;
+  box-shadow: 0 -0.25rem 1rem -0.5rem #000000;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+.haircut img {
+  width: 100%;
+  max-width: 22rem;
+  transition: transform 0.25s ease;
+}
+
+.haircut img:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.haircut-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #FFF;
+  z-index: 99;
+}
+
+.haircut-info button {
+  color: #FFF;
+  background-color: #d94140;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 0;
+  cursor: default;
+}
+
+@media screen and (max-width: 768px) {
+  .haircuts {
+    flex-direction: column;
+  }
+}
 body {
   font-family: "sora", sans-serif;
   width: 100%;

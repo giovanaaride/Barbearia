@@ -1,10 +1,10 @@
-// Início BG Home
-
 .container {
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 1.5rem;
 }
+
+// Início BG Home
 
 .bg-home {
     position: relative;
@@ -122,7 +122,7 @@
     padding: 2rem 1rem 4rem 1rem;
 
     img {
-        max-width: 35rem; 
+        max-width: 35rem;
     }
 }
 
@@ -145,7 +145,7 @@
 @media screen and (max-width: 768px) {
     .about-content {
         flex-direction: column;
-            gap: 2rem;
+        gap: 2rem;
     }
 
     .about-description {
@@ -154,3 +154,89 @@
         }
     }
 }
+// Fim ABOUT
+
+// Início SERVICES
+.services {
+    background: $white-normal;
+    color: $black-normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 1rem;
+}
+
+.services-content {
+    h2 {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        line-height: 150%;
+        margin-bottom: 1rem;
+        text-align: center;
+        max-width: 40rem;
+    }
+}
+
+.haircuts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 3rem 2rem 3rem;
+}
+
+.haircut {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: $white-normal;
+    border-radius: 1rem;
+    box-shadow: 0 -0.25rem 1rem -0.5rem #000000;
+    overflow: hidden;
+    margin-top: 2rem;
+
+    img {
+        width: 100%;
+        max-width: 22rem;
+
+        transition: transform 0.25s ease;
+    }
+}
+
+.haircut img:hover {
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.haircut-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: $white-normal;
+    z-index: 99;
+}
+
+.haircut-info button{
+    color: $white-normal;
+    background-color: $red-normal;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 0;
+    cursor: default;
+}
+
+@media screen and (max-width: 768px) {
+    .haircuts {
+        flex-direction: column;
+    }
+}
+
+// Fim SERVICES
+
