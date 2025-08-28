@@ -254,14 +254,16 @@
 .footer-icons {
     display: flex;
     gap: 8px;
-    color: $white-normal;
-        transition: color 0.3s ease;
+}
 
+.footer-icons a {
+    color: $white-normal;
+    transition: color 0.3s ease;
 }
 
 .footer-icons a:hover {
     color: $red-normal;
-    transform: scale(1.1)
+    transform: scale(1.1);
 }
 
 @media screen and (max-width: 768px) {
