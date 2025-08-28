@@ -306,6 +306,46 @@ header .header-logo {
     font-size: 0.75rem;
   }
 }
+.btn-whatsapp {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  z-index: 100;
+}
+.btn-whatsapp img {
+  max-width: 5rem;
+  transition: color 4s ease;
+}
+.btn-whatsapp img:hover {
+  transform: scale(1.05);
+}
+
+.btn-whatsapp .tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  width: 7.5rem;
+  top: 0.5rem;
+  left: -9rem;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+  background-color: #232224;
+  color: #FFF;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.btn-whatsapp:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .btn-whatsapp img {
+    max-width: 4rem;
+  }
+}
 body {
   font-family: "sora", sans-serif;
   width: 100%;
